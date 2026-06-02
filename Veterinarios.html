@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Veterinaria Chikawa - Veterinarios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body { font-family: "Verdana", 'Segoe UI', Arial, sans-serif; }
+        .redondo { border-radius: 20px; }
+        .table-responsive {
+            overflow-x: auto;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+        th {
+            background-color: #2980b9;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 12px 10px;
+            text-align: left;
+            border-bottom: 3px solid #1f618d;
+        }
+        td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #dcdde1;
+            color: #2c3e50;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f7f9;
+        }
+        tr:hover {
+            background-color: #ebf5fb;
+        }
+        .center {
+            text-align: center;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .badge-consultorio {
+            background-color: #34495e;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="w3-light-grey">
+
+    <header class="w3-container w3-pale-red w3-center w3-padding-16">
+        <img src="chikawa.jpg" alt="Logo" style="width:80px" class="w3-circle">
+        <h2>Veterinarias Chikawa</h2>
+    </header>
+
+    <nav class="w3-bar w3-pale-yellow w3-center">
+        <a href="Documento-Negocio-EJBR-0802.html" class="w3-bar-item w3-button">Inicio</a>
+        <a href="Consultas.html" class="w3-bar-item w3-button">Consultas</a>
+        <a href="Mascotas.html" class="w3-bar-item w3-button">Mascotas</a>
+        <a href="Duenos.html" class="w3-bar-item w3-button">Dueños</a>
+        <a href="Veterinarios.html" class="w3-bar-item w3-button w3-gray">Veterinarios</a>
+    </nav>
+
+    <div class="w3-container w3-padding-24">
+        
+        <div class="w3-panel w3-pale-blue w3-padding-32 redondo w3-card">
+            <h4>¡Hola! Bienvenido</h4>
+            <p>Veterinarias Chikawa: Cuidando con amor a tus mejores amigos. Salud, confianza y bienestar para tus mascotas en un solo lugar.</p>
+        </div>
+
+        <div class="w3-container w3-white w3-padding-16 w3-card redondo" style="margin-top: 24px;">
+            <h3 class="w3-center" style="color: #2980b9; text-transform: uppercase; letter-spacing: 1px; font-weight: bold; border-bottom: 3px solid #2980b9; padding-bottom: 10px;">
+                Plantilla Unificada de Personal Médico Veterinario y Especialistas
+            </h3>
+            
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="center">Num</th>
+                            <th>Médico Veterinario</th>
+                            <th>Cédula Profesional</th>
+                            <th>RFC</th>
+                            <th>Horario Laboral</th>
+                            <th>Teléfono de Contacto</th>
+                            <th class="center">Consultorio</th>
+                            <th>Especialidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center bold">1</td>
+                            <td><strong>Valeria Montes</strong></td>
+                            <td>12345678</td>
+                            <td class="bold">MON850101H209</td>
+                            <td>Lun-Vie 9:00 am - 5:00 pm</td>
+                            <td>656 210 3156</td>
+                            <td class="center"><span class="badge-consultorio">3</span></td>
+                            <td>Cirugía Veterinaria</td>
+                        </tr>
+                        <tr>
+                            <td class="center bold">2</td>
+                            <td><strong>Ricardo Salinas</strong></td>
+                            <td>87456321</td>
+                            <td class="bold">MAR0920515T25</td>
+                            <td>Lun-Vie 10:00 am - 6:00 pm</td>
+                            <td>654 321 7890</td>
+                            <td class="center"><span class="badge-consultorio">5</span></td>
+                            <td>Medicina General</td>
+                        </tr>
+                        <tr>
+                            <td class="center bold">3</td>
+                            <td><strong>Camila Ríos</strong></td>
+                            <td>765432118</td>
+                            <td class="bold">PEAL901020XYZ</td>
+                            <td>Mar-Sáb 9:00 am - 3:00 pm</td>
+                            <td>656 654 1122</td>
+                            <td class="center"><span class="badge-consultorio">1</span></td>
+                            <td>Dermatología y Alergias</td>
+                        </tr>
+                        <tr>
+                            <td class="center bold">4</td>
+                            <td><strong>Andro León</strong></td>
+                            <td>45561230</td>
+                            <td class="bold">HESM98123045</td>
+                            <td>Lun-Vie 7:00 am - 1:00 pm</td>
+                            <td>656 111 2233</td>
+                            <td class="center"><span class="badge-consultorio">6</span></td>
+                            <td>Medicina Felina</td>
+                        </tr>
+                        <tr>
+                            <td class="center bold">5</td>
+                            <td><strong>Fernando Quiroz</strong></td>
+                            <td>99871234</td>
+                            <td class="bold">QUIF750704150</td>
+                            <td>Miér-Dom 11:00 am - 5:00 pm</td>
+                            <td>656 443 2211</td>
+                            <td class="center"><span class="badge-consultorio">4</span></td>
+                            <td>Animales Exóticos</td>
+                        </tr>
+                        <tr>
+                            <td class="center bold">6</td>
+                            <td><strong>Mateo Herrera</strong></td>
+                            <td>723449351</td>
+                            <td class="bold">LIT0880312M60</td>
+                            <td>Lun-Vie 2:00 pm - 8:00 pm</td>
+                            <td>656 789 4501</td>
+                            <td class="center"><span class="badge-consultorio">9</span></td>
+                            <td>Traumatología Veterinaria</td>
+                        </tr>
+                        <tr>
+                            <td class="center bold">7</td>
+                            <td><strong>Paula Navarro</strong></td>
+                            <td>85671239</td>
+                            <td class="bold">AB2917313D28</td>
+                            <td>Mar-Sáb 8:00 pm - 2:00 am</td>
+                            <td>656 889 5566</td>
+                            <td class="center"><span class="badge-consultorio">5</span></td>
+                            <td>Odontología</td>
+                        </tr>
+                        <tr>
+                            <td class="center bold">8</td>
+                            <td><strong>Sebastian Cruz</strong></td>
+                            <td>44887700</td>
+                            <td class="bold">SILM856624</td>
+                            <td>Lun-Vie 4:00 pm - 9:00 pm</td>
+                            <td>656 112 7780</td>
+                            <td class="center"><span class="badge-consultorio">7</span></td>
+                            <td>Diagnóstico</td>
+                        </tr>
+                        <tr>
+                            <td class="center bold">9</td>
+                            <td><strong>Daniela Fuentes</strong></td>
+                            <td>90213478</td>
+                            <td class="bold">SAMC900601J45</td>
+                            <td>Lun-Sáb 8:00 am - 2:00 pm</td>
+                            <td>656 334 4401</td>
+                            <td class="center"><span class="badge-consultorio">10</span></td>
+                            <td>Medicina Preventiva</td>
+                        </tr>
+                        <tr>
+                            <td class="center bold">10</td>
+                            <td><strong>Javier Morales</strong></td>
+                            <td>84567123</td>
+                            <td class="bold">MORA820415XYZ</td>
+                            <td>Lun-Vie 1:00 pm - 7:00 pm</td>
+                            <td>656 556 7789</td>
+                            <td class="center"><span class="badge-consultorio">9</span></td>
+                            <td>Oncología Veterinaria</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="w3-panel w3-pale-green w3-round-xlarge w3-center w3-margin-top">
+            <p>Edith Jimena Barraza Reyes | 4-J | 0802</p>
+        </div>
+    </div>
+
+</body>
+</html>

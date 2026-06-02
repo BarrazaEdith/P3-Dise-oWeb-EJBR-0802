@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Veterinaria Chikawa - Consultas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body { font-family: "Verdana", 'Segoe UI', Arial, sans-serif; }
+        .redondo { border-radius: 20px; }
+        
+      
+        .table-responsive {
+            overflow-x: auto;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+        th {
+            background-color: #34495e;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 12px;
+            text-align: left;
+            border-bottom: 3px solid #2c3e50;
+        }
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #dcdde1;
+            color: #333;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        tr:hover {
+            background-color: #f1f2f6;
+        }
+        .center {
+            text-align: center;
+        }
+        .status {
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        .pendiente {
+            background-color: #ffeaa7;
+            color: #d63031;
+        }
+        .hecha {
+            background-color: #55efc4;
+            color: #00b894;
+        }
+        .cancelada {
+            background-color: #ff7675;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body class="w3-light-grey">
+
+
+    <header class="w3-container w3-pale-red w3-center w3-padding-16">
+        <img src="chikawa.jpg" alt="Logo" style="width:80px" class="w3-circle">
+        <h2>Veterinarias Chikawa</h2>
+    </header>
+
+
+    <nav class="w3-bar w3-pale-yellow w3-center">
+        <a href="Documento-Negocio-EJBR-0802.html" class="w3-bar-item w3-button">Inicio</a>
+        <a href="#" class="w3-bar-item w3-button w3-gray">Consultas</a>
+        <a href="Mascotas.html" class="w3-bar-item w3-button">Mascotas</a>
+        <a href="Duenos.html" class="w3-bar-item w3-button">Dueños</a>
+        <a href="Veterinarios.html" class="w3-bar-item w3-button">Veterinarios</a>
+    </nav>
+
+  
+    <div class="w3-container w3-padding-24">
+        
+
+        <div class="w3-panel w3-pale-blue w3-padding-32 redondo w3-card">
+            <h4>¡Hola! Bienvenido</h4>
+            <p>Veterinarias Chikawa: Cuidando con amor a tus mejores amigos. Salud, confianza y bienestar para tus mascotas en un solo lugar.</p>
+        </div>
+
+       
+        <div class="w3-container w3-white w3-padding-16 w3-card redondo" style="margin-top: 24px;">
+            <h3 class="w3-center" style="color: #2c3e50; text-transform: uppercase; letter-spacing: 1px; font-weight: bold;">
+                Registro  Consultas
+            </h3>
+            
+           
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Consulta</th>
+                            <th>Nombre Mascota</th>
+                            <th>ID Mascota</th>
+                            <th>Dueño</th>
+                            <th>Especie</th>
+                            <th>Motivo</th>
+                            <th>Diagnóstico</th>
+                            <th>Tratamiento</th>
+                            <th>Fecha</th>
+                            <th>Estado</th>
+                            <th>Pago</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center">1</td>
+                            <td><strong>Rocky</strong></td>
+                            <td class="center">0001</td>
+                            <td>Valeria Madrid</td>
+                            <td>Perro</td>
+                            <td>Vómito y diarrea</td>
+                            <td>Gastroenteritis</td>
+                            <td>Suero Oral</td>
+                            <td class="center">10/04/26</td>
+                            <td class="center"><span class="status cancelada">Cancelada</span></td>
+                            <td class="center"><span class="status pendiente">Pendiente</span></td>
+                        </tr>
+                        <tr>
+                            <td class="center">2</td>
+                            <td><strong>Queso</strong></td>
+                            <td class="center">0124</td>
+                            <td>Brenda Adams</td>
+                            <td>Gato</td>
+                            <td>Falta Apetito</td>
+                            <td>Infección</td>
+                            <td>Antibiótico</td>
+                            <td class="center">30/11/26</td>
+                            <td class="center"><span class="status pendiente">Pendiente</span></td>
+                            <td class="center"><span class="status pendiente">Pendiente</span></td>
+                        </tr>
+                        <tr>
+                            <td class="center">3</td>
+                            <td><strong>Brown</strong></td>
+                            <td class="center">0200</td>
+                            <td>Sofía Barrera</td>
+                            <td>Gato</td>
+                            <td>Esguince leve</td>
+                            <td>Inflamación</td>
+                            <td>Reposo</td>
+                            <td class="center">15/11/26</td>
+                            <td class="center"><span class="status pendiente">Pendiente</span></td>
+                            <td class="center"><span class="status pendiente">Pendiente</span></td>
+                        </tr>
+                        <tr>
+                            <td class="center">4</td>
+                            <td><strong>Max</strong></td>
+                            <td class="center">0333</td>
+                            <td>Klein Moretti</td>
+                            <td>Gato</td>
+                            <td>Vacunación</td>
+                            <td>Vacunado Correctamente</td>
+                            <td>Aplicación</td>
+                            <td class="center">20/11/26</td>
+                            <td class="center"><span class="status pendiente">Pendiente</span></td>
+                            <td class="center"><span class="status pendiente">Pendiente</span></td>
+                        </tr>
+                        <tr>
+                            <td class="center">5</td>
+                            <td><strong>Dark</strong></td>
+                            <td class="center">0450</td>
+                            <td>Ricardo Vélez</td>
+                            <td>Perro</td>
+                            <td>Tos</td>
+                            <td>Traqueítis</td>
+                            <td>Jarabe</td>
+                            <td class="center">21/11/26</td>
+                            <td class="center"><span class="status pendiente">Pendiente</span></td>
+                            <td class="center"><span class="status pendiente">Pendiente</span></td>
+                        </tr>
+                        <tr>
+                            <td class="center">6</td>
+                            <td><strong>Simba</strong></td>
+                            <td class="center">0533</td>
+                            <td>Mariana Pérez</td>
+                            <td>Perro</td>
+                            <td>Herida en la piel</td>
+                            <td>Dermatitis Alergia</td>
+                            <td>Pomada</td>
+                            <td class="center">29/11/26</td>
+                            <td class="center"><span class="status pendiente">Pendiente</span></td>
+                            <td class="center"><span class="status pendiente">Pendiente</span></td>
+                        </tr>
+                        <tr>
+                            <td class="center">7</td>
+                            <td><strong>Luna</strong></td>
+                            <td class="center">0642</td>
+                            <td>Kim Soleum</td>
+                            <td>Conejo</td>
+                            <td>Caída de pelo</td>
+                            <td>Alergia Alimentaria</td>
+                            <td>Medicamento Especializado</td>
+                            <td class="center">22/11/26</td>
+                            <td class="center"><span class="status pendiente">Pendiente</span></td>
+                            <td class="center"><span class="status pendiente">Pendiente</span></td>
+                        </tr>
+                        <tr>
+                            <td class="center">8</td>
+                            <td><strong>Maya</strong></td>
+                            <td class="center">0716</td>
+                            <td>Elena Vrozaline</td>
+                            <td>Gato</td>
+                            <td>Esterilización</td>
+                            <td>Sano</td>
+                            <td>Cirugía</td>
+                            <td class="center">03/12/26</td>
+                            <td class="center"><span class="status pendiente">Pendiente</span></td>
+                            <td class="center"><span class="status pendiente">Pendiente</span></td>
+                        </tr>
+                        <tr>
+                            <td class="center">9</td>
+                            <td><strong>Milo</strong></td>
+                            <td class="center">0840</td>
+                            <td>Oscar Barraza</td>
+                            <td>Gato</td>
+                            <td>Desparasitación</td>
+                            <td>Sano</td>
+                            <td>Aplicación</td>
+                            <td class="center">04/12/26</td>
+                            <td class="center"><span class="status hecha">Hecha</span></td>
+                            <td class="center"><span class="status pendiente">Pendiente</span></td>
+                        </tr>
+                        <tr>
+                            <td class="center">10</td>
+                            <td><strong>Mia</strong></td>
+                            <td class="center">0462</td>
+                            <td>Miranda Soler</td>
+                            <td>Perro</td>
+                            <td>Problema respiratorio</td>
+                            <td>Síndrome bronquial</td>
+                            <td>Inhalador broncodilatador</td>
+                            <td class="center">05/12/26</td>
+                            <td class="center"><span class="status hecha">Hecha</span></td>
+                            <td class="center"><span class="status pendiente">Pendiente</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="w3-panel w3-pale-green w3-round-xlarge w3-center w3-margin-top">
+            <p>Edith Jimena Barraza Reyes | 4-J | 0802</p>
+        </div>
+    </div>
+
+</body>
+</html>
